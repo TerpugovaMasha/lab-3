@@ -1,14 +1,17 @@
 public class Algorythm {
     private int low;
     private int high;
-    private  int array[];
+    private int array[];
     private int count;
-
-    public void start(int count, int low, int high) {
+	
+	public Algorythm(int count, int low, int high){
         this.count = count;
         this.low = low;
-        this.high = high;
-        array=new int[count];
+        this.high = high; 
+    }
+
+    public void start() {
+		array=new int[count];
         fillarry();
     }
     private void fillarry(){
